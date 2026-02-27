@@ -1,0 +1,137 @@
+.contact-us {
+    margin-top: 30px;
+    animation: fadeIn 0.5s;
+    padding-bottom: 80px;
+}
+
+.contact-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-hero h1 {
+    font-size: max(4vw, 32px);
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    color: #676767;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.info-item .icon {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff4f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.info-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #262626;
+}
+
+.info-item p {
+    color: #676767;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 20px;
+    border: 1px solid #e2e2e7;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #FF4C24;
+}
+
+.submit-btn {
+    background-color: #FF4C24;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e54420;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 76, 36, 0.3);
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}
